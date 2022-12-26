@@ -34,7 +34,7 @@ class Auth with ChangeNotifier {
   Future<void> _authenticate(
       String email, String password, String urlSegment) async {
     final url =
-        'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=AIzaSyDmak3lHXWpsgVVlhp5Au1Xp25KKe0FyBw';
+        'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=AIzaSyCUMi0dBYj-bjfFh0xyQW3aoNWqYV9EmRA';
     try {
       final request = await http.post(
         Uri.parse(url),
@@ -81,7 +81,7 @@ class Auth with ChangeNotifier {
 
   Future<void> addUserData(Map<String, String> userData) async {
     final url =
-        'https://ncia-project-travel-app-default-rtdb.firebaseio.com/userData.json?auth=$_token';
+        'https://sound-analysis-114d3-default-rtdb.firebaseio.com/userData.json?auth=$_token';
     try {
       final request = await http.post(
         Uri.parse(url),
